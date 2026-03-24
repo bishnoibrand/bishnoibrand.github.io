@@ -3,146 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Magic</title>
+
+    <title>Run and Deploy | Fast App Hosting & Deployment Solutions</title>
+    <meta name="description" content="Run and Deploy is your ultimate solution for fast, secure, and seamless application deployment. Discover the best tech solutions and web hosting features today.">
+    <meta name="keywords" content="run and deploy, app deployment, netlify apps, web hosting, tech solutions, fast website deployment, free hosting, github pages setup">
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="canonical" href="https://yourusername.github.io/">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Run and Deploy | Fast App Hosting">
+    <meta property="og:description" content="Ultimate solution for fast, secure, and seamless application deployment.">
+    <meta property="og:image" content="https://yourusername.github.io/favicon.png">
+    <meta property="og:url" content="https://yourusername.github.io/">
+
     <style>
-        /* Basic Styling */
+        /* बेसिक पेज स्टाइल */
         body, html {
             margin: 0;
             padding: 0;
-            height: 100%;
-            overflow: hidden;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #1a1a2e;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-color: #f9f9f9;
         }
 
-        /* Canvas for Particles */
-        #particleCanvas {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-        }
-
-        /* Glassmorphism Card */
-        .card {
-            position: relative;
-            z-index: 10;
-            padding: 40px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-            color: white;
-            text-align: center;
-            max-width: 400px;
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-            background: rgba(255, 255, 255, 0.15);
-        }
-
-        h1 { margin: 0; font-size: 2.5rem; color: #00d2ff; }
-        p { font-size: 1.1rem; opacity: 0.8; }
-        
-        .btn {
-            margin-top: 20px;
-            padding: 10px 25px;
+        /* Iframe स्क्रीन पर पूरा दिखेगा, लेकिन अब यूज़र नीचे स्क्रॉल कर पाएगा */
+        .fullscreen-iframe {
+            width: 100vw;
+            height: 100vh;
             border: none;
-            border-radius: 50px;
-            background: linear-gradient(45deg, #00d2ff, #3a7bd5);
-            color: white;
-            font-weight: bold;
-            text-transform: uppercase;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0, 210, 255, 0.3);
+            display: block;
+        }
+
+        /* SEO टेक्स्ट के लिए खूबसूरत डिज़ाइन जो प्रोफेशनल लगे */
+        .seo-content-section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px 30px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .seo-content-section h1 {
+            color: #0056b3;
+            font-size: 28px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .seo-content-section h2 {
+            color: #444;
+            font-size: 22px;
+            margin-top: 30px;
+        }
+
+        /* कीवर्ड्स को टैग्स जैसा दिखाने के लिए CSS */
+        .keyword-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0;
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .keyword-tags li {
+            background: #e9ecef;
+            color: #495057;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
         }
     </style>
 </head>
 <body>
 
-    <canvas id="particleCanvas"></canvas>
+    <iframe src="https://runanddeploy.netlify.app" class="fullscreen-iframe" title="Run and Deploy Application" allowfullscreen>
+        <p>Your browser does not support iframes. Please visit <a href="https://runanddeploy.netlify.app">Run and Deploy</a>.</p>
+    </iframe>
 
-    <div class="card">
-        <h1>नमस्ते!</h1>
-        <p>यह एक इंटरैक्टिव वेब पेज है। माउस को स्क्रीन पर घुमाकर देखें कि पीछे के पार्टिकल्स कैसे रिएक्ट करते हैं।</p>
-        <button class="btn" onclick="changeColor()">रंग बदलें</button>
+    <div class="seo-content-section">
+        <h1>Run and Deploy: Your Ultimate Web Hosting & Deployment Solution</h1>
+        
+        <p>Welcome to <strong>Run and Deploy</strong>. We specialize in offering lightning-fast, secure, and highly scalable solutions for modern web applications. Whether you are launching a personal portfolio on <strong>GitHub Pages</strong> or deploying complex single-page applications via platforms like <strong>Netlify</strong>, our interface provides a seamless experience.</p>
+
+        <h2>Why Choose Fast Application Deployment?</h2>
+        <p>In today's fast-paced digital world, website speed and uptime are crucial for user retention and <strong>Search Engine Optimization (SEO)</strong>. Our platform ensures your static sites, React apps, and custom HTML/CSS projects go live in seconds without server-side configurations. Experience the true power of automated CI/CD pipelines and static site generation.</p>
+
+        <h2>Core Features & Supported Technologies</h2>
+        <p>We support a wide array of modern frontend web development technologies. From simple static hosting to dynamic edge functions, our deployment strategies are designed for developers, by developers.</p>
+
+        <ul class="keyword-tags">
+            <li>Fast Web Hosting</li>
+            <li>Netlify App Deployment</li>
+            <li>GitHub Pages Setup</li>
+            <li>Static Site Generator</li>
+            <li>Custom Domain Setup</li>
+            <li>Frontend Development</li>
+            <li>Free SSL Certificate</li>
+            <li>SEO Friendly Hosting</li>
+            <li>Web Performance Optimization</li>
+            <li>Automated CI/CD</li>
+        </ul>
     </div>
 
-    <script>
-        const canvas = document.getElementById('particleCanvas');
-        const ctx = canvas.getContext('2d');
-        let particles = [];
-        let hue = 200;
-
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        window.addEventListener('resize', () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        });
-
-        const mouse = { x: null, y: null };
-        window.addEventListener('mousemove', (e) => {
-            mouse.x = e.x;
-            mouse.y = e.y;
-            for (let i = 0; i < 3; i++) {
-                particles.push(new Particle());
-            }
-        });
-
-        class Particle {
-            constructor() {
-                this.x = mouse.x;
-                this.y = mouse.y;
-                this.size = Math.random() * 15 + 1;
-                this.speedX = Math.random() * 3 - 1.5;
-                this.speedY = Math.random() * 3 - 1.5;
-                this.color = `hsl(${hue}, 100%, 50%)`;
-            }
-            update() {
-                this.x += this.speedX;
-                this.y += this.speedY;
-                if (this.size > 0.2) this.size -= 0.1;
-            }
-            draw() {
-                ctx.fillStyle = this.color;
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fill();
-            }
-        }
-
-        function handleParticles() {
-            for (let i = 0; i < particles.length; i++) {
-                particles[i].update();
-                particles[i].draw();
-                if (particles[i].size <= 0.3) {
-                    particles.splice(i, 1);
-                    i--;
-                }
-            }
-        }
-
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            handleParticles();
-            requestAnimationFrame(animate);
-        }
-        animate();
-
-        function changeColor() {
-            hue = Math.random() * 360;
-        }
-    </script>
 </body>
 </html>
